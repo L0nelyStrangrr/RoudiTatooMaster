@@ -185,7 +185,7 @@
             <h2>Получить смету и скидку 5% на ремонт</h2>
             <form action="">
                 <input type="text" placeholder="Имя">
-                <input type="text" placeholder="+7 (_ _ _) _ _ _-_ _-_ _">
+                <input type="text" class="phone" placeholder="+7 (___) ___-__-__">
                 <input type="button" value="Получить">
             </form>
 
@@ -301,7 +301,7 @@
                 </div>
                 <div class="calculator__info">
                     <input type="text" placeholder="Имя">
-                    <input type="text" placeholder="+7 (_ _ _) _ _ _-_ _-_ _">
+                    <input type="tel" placeholder="+7 (___) ___-__-__" class="phone" pattern="2[0-9]{3}-[0-9]{3}"/>
                     <input type="button" value="Расчитать">
                 </div>
                 </form>
@@ -357,8 +357,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
