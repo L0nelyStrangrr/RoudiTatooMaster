@@ -4,362 +4,399 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400|Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <img class="header__logo" src="img/logo.png" alt="">
-                <div class="header__callback">
-                    <div>+7 (351) 223-67-76</div>
-                    <a href="#">Позвоните мне</a>
-                </div>
-            </div>
-            <div class="header__bottom">
-                <nav class="header__nav">
-                    <a href="#why">Почему мы?</a>
-                    <a href="#portfolio">Галерея работ</a>
-                    <a href="#calculator">Расчитать стоимость</a>
-                    <a href="#faq">Часто задаваемые вопросы</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <section class="heading">
-        <div class="container">
-            <div class="heading__content">
-                <h1>
-                    Ремонт квартир <br>
-                    под ключ в Челябинске
-                </h1>
-                <div>
-                    Закажите ремонт Вашей мечты <br> 
-                    по доступным ценам
-                </div>
-                <a href="#">
-                    Рассчитать стоимость
+    <div class="wrapper">
+        <header id="home" class="header">
+            <div class="header__mobile">
+                <a href="#" class="header__btn-mobile">
+                    <span></span>
                 </a>
-            </div>
-        </div>
-    </section>
-    <section id="why" class="why">
-        <div class="container">
-            <h2>почему мы</h2>
-            <div class="row row__center">
-                <div class="col col__5">
-                    <img src="img/chekout.png" alt="">
-                    <span>Выезд специалиста в любое удобное <strong>Вам</strong> время</span>    
-                </div>
-                <div class="col col__5">
-                    <img src="img/discount.png" alt="">
-                    <span>Скидка на производство работ и строительные материалы</span>    
-                </div>
-                <div class="col col__5">
-                    <img src="img/expirience.png" alt="">
-                    <span>Многолетний опыт работы в сфере ремонта</span>    
-                </div>
-                <div class="col col__5">
-                    <img src="img/payment.png" alt="">
-                    <span>Точный расчет и представление сметы в течении 2 дней</span>    
-                </div>
-                <div class="col col__5">
-                    <img src="img/warranty.png" alt="">
-                    <span>Гарантия <strong>1</strong> год на все работы</span>    
-                </div>
-                <div class="col col__5">
-                    <img src="img/contract.png" alt="">
-                    <span>Работа по договору</span>    
+                <div class="header__logo-mobile">
+                    <a href="#home">
+                        roudi<br>
+                        art<br>
+                        work
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Галерея работ</h2>
-            <div class="portfolio__categories">
-                <div class="row">
-                    <div class="col col__4">
-                        <a href="#tab1" class="portfolio__category">
-                            <img src="./img/portfolio-title-1.png" alt="">
-                            <div>Дизайн 1-комнатной квартиры до / после (29кв.м)</div>
+            <div class="header__scene">
+                <div data-speed = "5" class="header__layer"></div>
+            </div>
+            <div class="header__container">
+                <div class="header__content">
+                    <div class="header__logo">
+                        <a href="#home">
+                            roudi<br>
+                            art<br>
+                            work
                         </a>
                     </div>
-                    <div class="col col__4">
-                        <a href="#tab2" class="portfolio__category">
-                            <img src="./img/portfolio-title-2.png" alt="">
-                            <div>Как из двух комнат сделать три</div>
+                    <a href="#" class="header__btn">
+                        <span></span>
+                    </a>
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="header__navlink"><span>01</span><a href="#home">домашняя странца</a></li>
+                            <li class="header__navlink"><span>02</span><a href="#about">обо мне</a></li>
+                            <li class="header__navlink"><span>03</span><a href="#portfolio">портфолио</a></li>
+                            <li class="header__navlink"><span>04</span><a href="#shop">магазин</a></li>
+                            <li class="header__navlink"><span>05</span><a href="#reviews">отзывы</a></li>
+                            <li class="header__navlink"><span>06</span><a href="#communication">контакты</a></li>
+                            <li class="header__navlink"><span>07</span><a href="#faq">f.a.q</a></li>
+                        </ul>
+                        <a class="header__icon" href="https://vk.com/rowdyroom">
+                            <svg width="61" height="37" viewBox="0 0 61 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M58.8379 3.27956C59.252 1.90393 58.8379 0.895142 56.8795 0.895142H50.3918C48.7411 0.895142 47.9867 1.76785 47.5725 2.72635C47.5725 2.72635 44.274 10.7701 39.5998 15.9856C38.0911 17.5032 37.4018 17.9825 36.5794 17.9825C36.1682 17.9825 35.5706 17.5032 35.5706 16.1276V3.27956C35.5706 1.62881 35.0943 0.895142 33.7187 0.895142H23.5242C22.4947 0.895142 21.8735 1.65839 21.8735 2.38614C21.8735 3.94814 24.2106 4.30906 24.4502 8.71106V18.2606C24.4502 20.3521 24.0745 20.7337 23.2462 20.7337C21.0481 20.7337 15.6994 12.6604 12.5252 3.4186C11.9069 1.62289 11.2827 0.898101 9.62599 0.898101H3.14132C1.28645 0.898101 0.916656 1.77081 0.916656 2.72931C0.916656 4.45106 3.1147 12.9711 11.1554 24.2394C16.5159 31.934 24.0627 36.1052 30.9378 36.1052C35.0588 36.1052 35.5676 35.1793 35.5676 33.5818V27.7657C35.5676 25.9138 35.9611 25.541 37.2657 25.541C38.2242 25.541 39.8749 26.0262 43.7237 29.733C48.1198 34.1291 48.8476 36.1023 51.3178 36.1023H57.8025C59.6544 36.1023 60.5803 35.1763 60.0478 33.3481C59.465 31.5287 57.3646 28.881 54.5779 25.7481C53.0632 23.9613 50.8001 22.0384 50.1108 21.0769C49.1493 19.8374 49.4274 19.2901 50.1108 18.1896C50.1137 18.1925 58.0155 7.06327 58.8379 3.27956Z" fill="white"/>
+                            </svg>
                         </a>
-                    </div>
-                    <div class="col col__4">
-                        <a href="#tab3" class="portfolio__category">
-                            <img src="./img/portfolio-title-3.png" alt="">
-                            <div>Дизайн и ремонт частного дома</div>
+                        <a class="header__icon" href="https://www.instagram.com/dimaroudi/?hl=ru">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.9944 13.997C17.1383 13.997 13.9915 17.1439 13.9915 21C13.9915 24.8561 17.1383 28.003 20.9944 28.003C24.8504 28.003 27.9972 24.8561 27.9972 21C27.9972 17.1439 24.8504 13.997 20.9944 13.997ZM41.9977 21C41.9977 18.1 42.0239 15.2263 41.8611 12.3316C41.6982 8.96937 40.9312 5.98536 38.4726 3.52669C36.0087 1.06278 33.03 0.301015 29.6678 0.138155C26.7679 -0.0247052 23.8943 0.00156264 20.9996 0.00156264C18.0997 0.00156264 15.2261 -0.0247052 12.3314 0.138155C8.9692 0.301015 5.98524 1.06803 3.52663 3.52669C1.06276 5.99061 0.301009 8.96937 0.138152 12.3316C-0.0247047 15.2316 0.00156261 18.1053 0.00156261 21C0.00156261 23.8947 -0.0247047 26.7737 0.138152 29.6684C0.301009 33.0306 1.06801 36.0146 3.52663 38.4733C5.9905 40.9372 8.9692 41.699 12.3314 41.8618C15.2313 42.0247 18.105 41.9984 20.9996 41.9984C23.8995 41.9984 26.7732 42.0247 29.6678 41.8618C33.03 41.699 36.014 40.932 38.4726 38.4733C40.9365 36.0094 41.6982 33.0306 41.8611 29.6684C42.0292 26.7737 41.9977 23.9 41.9977 21ZM20.9944 31.775C15.0317 31.775 10.2195 26.9628 10.2195 21C10.2195 15.0372 15.0317 10.225 20.9944 10.225C26.957 10.225 31.7692 15.0372 31.7692 21C31.7692 26.9628 26.957 31.775 20.9944 31.775ZM32.2105 12.3001C30.8183 12.3001 29.6941 11.1759 29.6941 9.78367C29.6941 8.39148 30.8183 7.26722 32.2105 7.26722C33.6026 7.26722 34.7269 8.39148 34.7269 9.78367C34.7273 10.1143 34.6625 10.4417 34.5362 10.7472C34.4099 11.0527 34.2245 11.3302 33.9908 11.564C33.757 11.7978 33.4794 11.9831 33.174 12.1094C32.8685 12.2357 32.541 12.3005 32.2105 12.3001Z" fill="white"/>
+                            </svg>                                    
                         </a>
-                    </div>
+                        <a href="https://vk.com/rowdyroom" class="header__textlink">vkontakte</a>
+                        <a href="https://www.instagram.com/dimaroudi/?hl=ru" class="header__textlink">instagram</a>
+                    </nav>
                 </div>
             </div>
-            <div class="portfolio__tabs">
-                <div id="tab1" class="tab">
-                    <div class="swiper-container swiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/tab_1-1.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_1-2.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_1-3.png" alt="">
-                            </div>
-                        </div>                 
-                    </div>
-                    <img class="swiper-button-prev" src="img/arrow-prev.png" alt="">
-                    <img class="swiper-button-next" src="img/arrow-next.png" alt=""> 
-                </div>
-                <div id="tab2" class="tab">
-                    <div class="swiper-container swiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-1.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-2.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-3.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-4.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-5.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-6.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_2-7.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <img class="swiper-button-prev" src="img/arrow-prev.png" alt="">
-                    <img class="swiper-button-next" src="img/arrow-next.png" alt=""> 
-                </div>
-                <div id="tab3" class="tab">
-                    <div class="swiper-container swiper3">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-1.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-2.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-3.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-4.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-5.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-6.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-7.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="img/tab_3-8.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <img class="swiper-button-prev" src="img/arrow-prev.png" alt="">
-                    <img class="swiper-button-next" src="img/arrow-next.png" alt=""> 
-                </div>  
-            </div>
-        <div class="discount">
-            <h2>Получить смету и скидку 5% на ремонт</h2>
-            <form action="">
-                <input type="text" placeholder="Имя">
-                <input type="text" class="phone" placeholder="+7 (___) ___-__-__">
-                <input type="button" value="Получить">
-            </form>
-
-        </div>    
-    </section>
-    <section class="work">
-        <div class="container">
-            <h2>
-                До идеального ремонта<br>осталось всего 4 шага
-            </h2>
-            <div class="work__instruction">
-                <div class="row row__center row__column">
-                    <div class="col col__5">
-                        <div class="work__step">
-                            <img src="img/request.png" alt="">
-                            <p>Оставить заявку и договориться 
-                                о времени встречи со специалистом</p>
-                        </div>
-                    </div>
-                    <div class="col col__5">
-                        <div class="work__step">
-                            <img src="img/meeting.png" alt="">
-                            <p>Встретить нашего представителя и рассказать свои пожелания</p>
-                        </div>
-                    </div>
-                    <div class="col col__5">
-                        <div class="work__step">
-                            <img src="img/payment.png" alt="">
-                            <p>Через 2-3 дня ознакомиться со сметой на ремонт</p>
-                        </div>
-                    </div>
-                    <div class="col col__5">
-                        <div class="work__step">
-                            <img src="img/contract.png" alt="">
-                            <p>Утвердить смету и подписать договор</p>
-                        </div>
-                    </div>
+            <h1>дима роуди</h1>
+        </header>
+        <section id="about" class="about">
+            <div class="container">
+                <p class="about__heading">
+                    Работаю в технике графика,<br> 
+                    лайнворк и випшейдинг,<br> 
+                    реализуя уникальные<br> 
+                    проекты в своем стиле.
+                </p>
+                <div class="about__video">
+                    <iframe src="https://www.youtube.com/embed/ACtxXGZ69NM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="calculator" class="calculator">
-        <div class="container">
-            <h2>Расчитать стоимость</h2>
-            <div class="calculator__wrap">
-                <form action="">
-                <div class="row">
-                    <div class="col col__small">
-                        <div class="calculator__type">
-                            <h3>Тип жилья</h3>
-                            <div>
-                                <input type="radio" id="radio1" name="type"> <label for="radio1">Новостройка</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="radio2" name="type"> <label for="radio2">Вторичное</label>
-                            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2>портфолио</h2>
+            <div class="container">
+                <div class="swiper-container"> 
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-1.jpg" alt="">
+                            <span>lorem</span>
                         </div>
-                    </div>
-                    <div class="col col__small">
-                        <div class="calculator__room">
-                            <h3>Количество комнат</h3>
-                            <div class="calculator__slider">
-                                <img src="img/arrow-prev.png" alt="">
-                                <span>1</span>
-                                <img src="img/arrow-next.png" alt="">
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-2.jpg" alt="">
+                            <span>lorem</span>
                         </div>
-                    </div>
-                    <div class="col col__large">
-                        <h3>Необходимо</h3>
-                        <div class="calculator__roomcontainer">
-                            <div class="row">
-                                <div class="col col__6">
-                                    <div>
-                                        <input type="checkbox" id="cb1"> <label for="cb1">Отделка пола</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb2"> <label for="cb2">Отделка стен</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb3"> <label for="cb3">Потолок</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb4"> <label for="cb4">Перепланировка</label>
-                                    </div>
-                                </div>
-                                <div class="col col__6">
-                                    <div>
-                                        <input type="checkbox" id="cb5"> <label for="cb5">Шумоизоляция</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb6"> <label for="cb6">Сборка мебели</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb7"> <label for="cb7">Демонтаж</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="cb8"> <label for="cb8">Сантехника</label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-3.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-4.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-5.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-6.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-7.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-8.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-9.jpg" alt="">
+                            <span>lorem</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/tatoo-10.jpg" alt="">
+                            <span>lorem</span>
                         </div>
                         
                     </div>
-                    <div class="col col__small">
-                        <div class="calculator__parametres">
-                            <p>Площадь</p>
-                            <input type="square">
-                            <p>Высота потолков</p>
-                            <input type="height">
+                    <svg class="swiper-button-next" width="53" height="8" viewBox="0 0 53 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.3536 4.35355C52.5488 4.15829 52.5488 3.84171 52.3536 3.64645L49.1716 0.464466C48.9763 0.269204 48.6597 0.269204 48.4645 0.464466C48.2692 0.659728 48.2692 0.976311 48.4645 1.17157L51.2929 4L48.4645 6.82843C48.2692 7.02369 48.2692 7.34027 48.4645 7.53553C48.6597 7.7308 48.9763 7.7308 49.1716 7.53553L52.3536 4.35355ZM0 4.5H52V3.5H0V4.5Z" fill="#C7B76F"/>
+                    </svg>
+                    <svg class="swiper-button-prev" width="53" height="8" viewBox="0 0 53 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.3536 4.35355C52.5488 4.15829 52.5488 3.84171 52.3536 3.64645L49.1716 0.464466C48.9763 0.269204 48.6597 0.269204 48.4645 0.464466C48.2692 0.659728 48.2692 0.976311 48.4645 1.17157L51.2929 4L48.4645 6.82843C48.2692 7.02369 48.2692 7.34027 48.4645 7.53553C48.6597 7.7308 48.9763 7.7308 49.1716 7.53553L52.3536 4.35355ZM0 4.5H52V3.5H0V4.5Z" fill="#C7B76F"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="shop" class="shop">
+            <h2>магазин</h2>
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-2.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-shirt-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-2.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-shirt-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-hand-poke-2.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/product-shirt-1.jpg" alt="">
+                            <div class="shop__info">
+                                <span class="shop__title">Футболка "Мое тело - это храм"</span>
+                                <span class="shop__price">1 000 ₽</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="calculator__info">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="+7 (___) ___-__-__" class="phone" pattern="2[0-9]{3}-[0-9]{3}"/>
-                    <input type="button" value="Расчитать">
-                </div>
-                </form>
+                    <svg class="swiper-button-next" width="53" height="8" viewBox="0 0 53 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.3536 4.35355C52.5488 4.15829 52.5488 3.84171 52.3536 3.64645L49.1716 0.464466C48.9763 0.269204 48.6597 0.269204 48.4645 0.464466C48.2692 0.659728 48.2692 0.976311 48.4645 1.17157L51.2929 4L48.4645 6.82843C48.2692 7.02369 48.2692 7.34027 48.4645 7.53553C48.6597 7.7308 48.9763 7.7308 49.1716 7.53553L52.3536 4.35355ZM0 4.5H52V3.5H0V4.5Z" fill="#C7B76F"/>
+                    </svg>
+                    <svg class="swiper-button-prev" width="53" height="8" viewBox="0 0 53 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.3536 4.35355C52.5488 4.15829 52.5488 3.84171 52.3536 3.64645L49.1716 0.464466C48.9763 0.269204 48.6597 0.269204 48.4645 0.464466C48.2692 0.659728 48.2692 0.976311 48.4645 1.17157L51.2929 4L48.4645 6.82843C48.2692 7.02369 48.2692 7.34027 48.4645 7.53553C48.6597 7.7308 48.9763 7.7308 49.1716 7.53553L52.3536 4.35355ZM0 4.5H52V3.5H0V4.5Z" fill="#C7B76F"/>
+                    </svg>
+                </div>  
             </div>
-        </div>
-    </section>
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2>часто задаваемые вопросы</h2>
-            <div class="faq__wrap">
-                <div class="faq__question">
-                    <div class="faq__opener">
-                        <div>+</div>
+        </section>
+        <section id="reviews" class="reviews">
+            <h2>отзывы</h2>
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__row">
+                                <div class="reviews__person">
+                                    <img src="img/reviewer-7.jpg" alt="">
+                                    <span>Mira Emancipation</span>
+                                </div>
+                                <div class="reviews__text">Забрала сейчас футболку с почты. Стикеры бомба просто, футболка идеальна. Заказывайте, не пожалеете. Дима умница просто! Будет возможность в НН приехать - поеду к нему забиваться.)
+                                    Заказ дошёл за 4 дня, весьма быстро, зная нашу почту. ^^
+                                    <a href="https://vk.com/topic-116327535_35117843?post=23">https://vk.com/topic-116327535_35117843?post=23</a>
+                                </div>     
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="faq__title">Кто занимается закупкой и доставкой материалов?</h3>
-                    <div class="faq__answer">По Вашему желанию, мы берём на себя закупку и доставку всех черновых материалов. Мы не навязываем свои строительные материалы и не зарабатываем на этом. Вы можете доверить нам решение этого вопроса, или заказать нужные материалы самостоятельно.
-                        Так же, мы рассчитываем точные объёмы черновых и особенно чистовых материалов (ламинат, плитка, обои). Это позволит исключить появление излишков или перевода дорогостоящих стройматериалов.</div>
-                </div>
-                <div class="faq__question">
-                    <div class="faq__opener">
-                        <div>+</div>
-                    </div>
-                    <h3 class="faq__title">Как происходит оплата?</h3>
-                    <div class="faq__answer">Все оплаты производятся поэтапно, по факту выполнения работ. После того, как Вы осмотрели и убедились, что работа выполнена! Никаких предоплат мы не берем.</div>
-                </div>
-                <div class="faq__question">
-                    <div class="faq__opener">
-                        <div>+</div>
-                    </div>
-                    <h3 class="faq__title">Сколько длится ремонт квартиры?</h3>
-                    <div class="faq__answer">В среднем, капитальный ремонт 1 комнатной квартиры в 50м2 — длится 1,5 месяца, 2 или 3-х комнатной квартиры — 2 месяца. Но все зависит от сложности ремонта и площади объекта. Будут или не будут вноситься изменения на стадии ремонтных работ.</div>
-                </div>
-                <div class="faq__question">
-                    <div class="faq__opener">
-                        <div>+</div>
-                    </div>
-                    <h3 class="faq__title">Как заказать ремонт?</h3>
-                    <div class="faq__answer">Если Вы решили сделать ремонт в своей квартире, то просто наберите нам по номеру +7 (351) 223-67-76
-                        Чтобы посчитать общую стоимость сметы, мы осмотрим квартиру и произведем все необходимые замеры. И составим список всех ремонтных работ которые необходимо выполнить.</div>
+                    <svg class="swiper-button-next" width="53" height="8" viewBox="0 0 53 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M52.3536 4.35355C52.5488 4.15829 52.5488 3.84171 52.3536 3.64645L49.1716 0.464466C48.9763 0.269204 48.6597 0.269204 48.4645 0.464466C48.2692 0.659728 48.2692 0.976311 48.4645 1.17157L51.2929 4L48.4645 6.82843C48.2692 7.02369 48.2692 7.34027 48.4645 7.53553C48.6597 7.7308 48.9763 7.7308 49.1716 7.53553L52.3536 4.35355ZM0 4.5H52V3.5H0V4.5Z" fill="#C7B76F"/>
+                    </svg>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <span>
-                    <img src="img/logo.png" alt="">
-                </span>
-                <span>Политика конфиденциальности</span>
-                <span>Пользователькое соглашение</span>
-                <span>+7 (351) 223-67-76</span>
+        </section>
+        <section id="communication"class="communication">
+            <h2>свяжитесь со мной</h2>
+            <div class="communication__container">
+                <div class="communication__row">
+                    <div class="communication__col">
+                        <form action="">
+                            <label for=""></label>
+                            <label for="name">Ваше имя</label>
+                            <input class="communication__input" id="name" type="text">
+                            <label for="e-mail">Ваш email</label>
+                            <input class="communication__input" id="e-mail" type="email">
+                            <input id="send" type="button" value="ОТПРАВИТЬ">
+                        </form>
+                    </div>
+                    <div class="communication__col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d577317.971141845!2d37.385524!3d55.582026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1584095599530!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-    <script src="js/swiper.min.js"></script>
+            
+        </section>
+        <section id="faq" class="faq">
+            <h2>f.a.q</h2>
+            <div class="container">
+                <div class="faq__questions">
+                   <div data-id="q1" class="faq__question">
+                       <span>Сколько стоит час моей работы?</span><span class="modal__btn">+</span>
+                   </div>
+                   <div data-id="q2" class="faq__question">
+                       <span>Как добраться?</span><span class="modal__btn">+</span>
+                   </div>
+                   <div data-id="q3" class="faq__question">
+                       <span>Как ухаживать за татуировкой?</span><span class="modal__btn">+</span>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="footer__container">
+                    <div class="footer__logo">
+                        roudi<br>
+                        art<br>
+                        work
+                </div>
+                <div class="footer__license">
+                    <span class="footer__item">Copyright @ ROUDI ART WORK 2020</span>
+                    <span class="footer__item"><a href="#">Политика конфиденциальности</a> <span class="footer__stick">|</span> <a href="#">Пользовательское соглашение</a></span>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+    <div class="modal__windows">
+        <div id="q1" class="modal__window">
+            <div class="modal__content">
+                <span class="modal__close"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quasi.</p>
+            </div>
+        </div>    
+        <div id="q2" class="modal__window">
+            <div class="modal__content">
+                <span class="modal__close"></span>
+            <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>  
+        <div id="q3" class="modal__window">
+            <div class="modal__content">
+                <span class="modal__close"></span>
+            <p>Lorem, ipsum.</p>
+            </div>
+        </div>  
+    </div>
+    
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/app.min.js"></script>
+    
 </body>
 </html>
